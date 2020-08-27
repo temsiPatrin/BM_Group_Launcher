@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BM Group Launcher</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textBtnAdding">Добавить на главный экран</string>
+    <string name="DialogText">Добавить приложения на главный экран?</string>
+    <string name="NoText">Нет</string>
+    <string name="YesText">Да</string>
+</resources>

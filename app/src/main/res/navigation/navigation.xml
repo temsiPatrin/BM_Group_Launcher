@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.temsi.bmgrouplauncher.ui.HomeScreen.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allAppsFragment"
+            app:destination="@id/allAppsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addingFragment"
+            app:destination="@id/addingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allAppsFragment"
+        android:name="com.temsi.bmgrouplauncher.ui.AllAppsScreen.AllAppsFragment"
+        android:label="fragment_all_apps"
+        tools:layout="@layout/fragment_all_apps" />
+    <fragment
+        android:id="@+id/addingFragment"
+        android:name="com.temsi.bmgrouplauncher.ui.AddingScreen.AddingFragment"
+        android:label="fragment_adding"
+        tools:layout="@layout/fragment_adding" >
+        <action
+            android:id="@+id/action_addingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>
